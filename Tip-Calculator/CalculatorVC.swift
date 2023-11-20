@@ -30,6 +30,7 @@ class CalculatorVC: UIViewController {
         return stackView
     }()
     
+    private let vm = CalculatorVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
