@@ -17,12 +17,14 @@ class CalculatorVM {
         
     }
     
+    private var cancellables = Set<AnyCancellable>()
+    
     struct Output {
         let updateViewPublisher: AnyPublisher<Result, Never>
     }
     
     func transform(input: Input) -> Output {
-        
+ 
         let result = Result(amounthPerPerson: 500,
                             totalBill: 1000,
                             totalTip: 50.0)
